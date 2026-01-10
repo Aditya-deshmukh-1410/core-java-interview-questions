@@ -1,3 +1,9 @@
+/*
+ * Interview Topic: Containment (Has-A Relationship)
+ * Source: Core Java Assignment
+ * Concepts: Object containment, Has-A relationship, toString()
+ */
+
 package com.containment;
 
 class Hobbies{
