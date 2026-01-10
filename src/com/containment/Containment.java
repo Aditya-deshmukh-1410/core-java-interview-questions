@@ -75,3 +75,9 @@ public class Containment {
 		System.out.println(employee.address.address2);
 	}
 }
+
+/*
+ Output:
+ - Dance
+ - Pune
+*/
