@@ -67,9 +67,10 @@ public class Containment {
 		Hobbies hobbies  = new Hobbies("Dance", "Sing");
 		
 		Address address = new Address("Mumbai", "Pune");
-		
+
+		// Containment: when one object contain another object as an attribute it is called as containment.shows (Has-A) relation.
 		Employee employee  = new Employee(101, "Naman", hobbies, address);
-		// containment: when one object contain another object as an attribute it is called as containment.shows (Has-A) relation.
+		
 		System.out.println(employee.hobbies.hobby1);
 		System.out.println(employee.address.address2);
 	}
