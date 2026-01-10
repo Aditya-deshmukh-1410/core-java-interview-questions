@@ -5,10 +5,11 @@
  */
 
 package com.overlaoding_overriding;
+// Overloading: Methods with same name,different parameters,in same class
+// Overriding:  Re-defining methods with same name,same parameter in child class
 
-
+//parent class
 class Accountant{
-	
 	public void calSalary(double salary) {
 		System.out.println("Accountant salary: "+salary);
 	}
@@ -21,6 +22,7 @@ class Accountant{
 	
 }
 
+//child class
 class Employee extends Accountant{
 	@Override
 	public void calSalary(double salary) {
@@ -29,7 +31,6 @@ class Employee extends Accountant{
 	@Override
 	public void calSalary(double salary, double bonus) {
 		System.out.println("Employee salary with bonus: "+(salary+bonus));
-
 	}
 	@Override
 	public void calSalary(double salary, double bonus, double tax) {
@@ -40,12 +41,14 @@ class Employee extends Accountant{
 
 public class Main {
 	public static void main(String[] args) {
-	
+
+		// Overloading demonstration
 		Accountant accountant = new Accountant();
 		accountant.calSalary(10000);
 		accountant.calSalary(10000, 1000);
 		accountant.calSalary(10000, 1000, 500);
-		
+
+		// Overriding demonstration
 		Employee employee  = new Employee();
 		employee.calSalary(15000);
 		employee.calSalary(15000, 1000);
@@ -53,3 +56,6 @@ public class Main {
 		
 	}
 }
+
+
+
