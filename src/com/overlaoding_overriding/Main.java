@@ -4,7 +4,7 @@
  * Concepts: Compile-time polymorphism, Runtime polymorphism
  */
 
-package com.overlaoding_overriding;
+package com.overloading_overriding;
 // Overloading: Methods with same name,different parameters,in same class
 // Overriding:  Re-defining methods with same name,same parameter in child class
 
@@ -34,7 +34,7 @@ class Employee extends Accountant{
 	}
 	@Override
 	public void calSalary(double salary, double bonus, double tax) {
-		System.out.println("Accountant salary with tax: "+(salary+bonus-tax));
+		System.out.println("Employee salary with tax: "+(salary+bonus-tax));
 	}
 }
 
@@ -57,5 +57,14 @@ public class Main {
 	}
 }
 
-
+/*
+ Output:
+ Accountant salary: 10000.0
+ Accountant salary with bonus: 11000.0
+ Accountant salary with tax: 10500.0
+ 
+ Employee salary: 15000.0
+ Employee salary with bonus: 16000.0
+ Employee salary with tax: 15500.0
+*/
 
