@@ -8,8 +8,6 @@
  * - Encapsulation
  */
 
-
-
 package com.hospital_domain;
 
 abstract class Person {
