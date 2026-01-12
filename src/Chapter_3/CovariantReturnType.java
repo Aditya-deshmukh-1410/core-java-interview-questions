@@ -1,5 +1,5 @@
 package Chapter_3;
-
+ 
 class Document{
 	Document getDocument() {
 		return this;
