@@ -4,7 +4,7 @@ class Ceo{
 	public void getRules() {
 		System.out.println("Ceo rules...");
 	}
-}
+} 
 
 class Manager extends Ceo{
 	@Override
