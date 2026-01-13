@@ -10,3 +10,10 @@ public class Demo extends Salary{
 		demo.CalSalary(25000, 550);
 	}
 }
+
+/*
+ * Output:
+ * Net Salary: 24450.0
+ */
+
+
