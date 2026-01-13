@@ -1,3 +1,11 @@
+/*
+ * Topic: Protected Access Modifier
+ * 
+ * Description:
+ * Demonstrates accessing a protected method
+ * from another package using inheritance.
+ */
+
 package Chapter_2;
 
 /*
