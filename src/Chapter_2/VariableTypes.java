@@ -1,3 +1,15 @@
+/*
+ * Topic: Types of Variables in Java
+ * 
+ * Description:
+ * Demonstrates different types of variables:
+ *  - Instance (Global) variable
+ *  - Static (Class) variable
+ *  - Local variable
+ */
+
+
+
 package Chapter_2;
 
 class Emp{
@@ -25,3 +37,10 @@ public class VariableTypes {
 		
 	}
 }
+
+/*
+ * Output:
+ * Harry
+ * Microsoft
+ * Employee salary: 25000.0
+ */
