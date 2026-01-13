@@ -1,3 +1,16 @@
+/*
+ * Topic: Parameterized Constructor in Java
+ * 
+ * Description:
+ * Demonstrates how to initialize object data using
+ * a parameterized constructor.
+ * 
+ * Concepts Used:
+ *  - Constructor with parameters
+ *  - this keyword
+ *  - Method overriding (toString)
+ */
+
 package Chapter_2;
 
 class Employee{
@@ -27,3 +40,8 @@ public class ParameterizedConstructor {
 		System.out.println(employee);
 	}
 }
+
+/*
+ * Output:
+ * Emp [id=10, name=Naman, salary=25000.0]
+ */
