@@ -1,3 +1,11 @@
+/*
+ * Topic: Static Members in Java
+ * Concepts Used:
+ *  - static variables
+ *  - static methods
+ *  - Class-level access
+ */
+
 package Chapter_2;
 
 class Company{
@@ -15,6 +23,13 @@ class Company{
 public class StaticMembers {
 	public static void main(String[] args) {
 		
+        // Calling static method using class name
 		Company.displayCompanyInfo();
 	}
 }
+
+/*
+ * Output:
+ * Company name: Google
+ * Company address: Banglore
+ */
