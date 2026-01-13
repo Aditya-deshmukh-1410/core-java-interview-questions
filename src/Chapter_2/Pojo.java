@@ -1,3 +1,19 @@
+/*
+ * Topic: POJO (Plain Old Java Object)
+ * 
+ * Description:
+ * Demonstrates the use of a POJO class with
+ * private data members and public getters
+ * and setters (Encapsulation).
+ * 
+ * Concepts Used:
+ *  - Encapsulation
+ *  - Getters and Setters
+ *  - Data hiding
+ */
+
+
+
 package Chapter_2;
 
 class Employe{
@@ -40,3 +56,11 @@ public class Pojo {
 		
 	}
 }
+
+
+/*
+ * Output:
+ * Employee id: 101
+ * Employee name: Rahul
+ * Employee salary: 25000.0
+ */
