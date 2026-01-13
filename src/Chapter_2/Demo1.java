@@ -6,3 +6,8 @@ public class Demo1 extends com.hospital.staff.doctor.salary.Salary{
 		demo1.calSalary(10000,500);
 	}
 }
+
+/*
+ * Output:
+ * Net Salary: 9500.0
+ */
