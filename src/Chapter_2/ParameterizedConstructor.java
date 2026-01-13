@@ -6,7 +6,7 @@
  * a parameterized constructor.
  * 
  * Concepts Used:
- *  - Constructor with parameters
+ *  - Constructor with parameters 
  *  - this keyword
  *  - Method overriding (toString)
  */
