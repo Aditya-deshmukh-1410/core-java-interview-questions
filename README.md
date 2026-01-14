@@ -1,5 +1,5 @@
 # Core Java Interview Questions
-
+ 
 This repository contains **Core Java interview questions** implemented with
 simple, clear, and practical examples.
  
