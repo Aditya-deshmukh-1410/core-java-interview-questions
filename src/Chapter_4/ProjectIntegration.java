@@ -9,7 +9,7 @@ package Chapter_4;
 
  2. ProjectManager (Abstract Class)
     - Implements SRS.
-    - Provides base implementations.
+    - Provides base implementations. 
     - Acts as a middle layer for future common logic.
 
  3. TeamLead
