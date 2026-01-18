@@ -9,7 +9,7 @@ import static java.lang.Math.*;
 import static java.lang.System.*;
 
 public class StaticImportAndBoxingDemo {
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		
 
         // Static import usage
