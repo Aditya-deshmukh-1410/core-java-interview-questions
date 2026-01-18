@@ -6,7 +6,7 @@ package Chapter_6;
  * Also shows basic usage of wrapper classes.
  */
 
-public class StringMethodsDemo {
+public class StringMethodsDemo { 
 	public static void main(String[] args) {
 		
 		String str = "Hello world";
