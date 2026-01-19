@@ -1,4 +1,8 @@
 package Chapter_7;
+/*
+ * Demonstrates exception handling using try, multiple catch blocks,
+ * and a finally block in Java.
+ */
 
 import java.util.InputMismatchException;
 
@@ -8,7 +12,7 @@ public class ExceptionHandling {
 		int n1 = 10,n2 = 0;
 		
 		try {
-			System.out.println(n1/n2);
+			System.out.println(n1/n2);  // exception  occurred
 		} catch (ArithmeticException e) {
 			e.printStackTrace();
 		} catch (InputMismatchException e) {
@@ -19,5 +23,13 @@ public class ExceptionHandling {
 			System.out.println("Program ended!!");
 		}
 	}
-
 }
+
+/*
+ * Output:
+ 
+  java.lang.ArithmeticException: / by zero
+  at Chapter_7.ExceptionHandling.main(ExceptionHandling.java:15)
+  Program ended!!
+ 
+ */
