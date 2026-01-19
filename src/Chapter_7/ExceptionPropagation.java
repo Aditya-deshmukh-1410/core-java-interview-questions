@@ -1,5 +1,11 @@
 package Chapter_7;
 
+/*
+ * Demonstrates exception propagation in Java.
+ * An exception thrown in one method is passed
+ * to the calling method until it is handled.
+ */
+
 public class ExceptionPropagation {
 	
 	public static void divide(int n1, int n2) {
@@ -29,3 +35,8 @@ public class ExceptionPropagation {
 	}
 
 }
+/*
+ * Output:
+ * java.lang.ArithmeticException
+ */
+
