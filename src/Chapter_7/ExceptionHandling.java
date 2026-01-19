@@ -1,7 +1,8 @@
 package Chapter_7;
 /*
- * Demonstrates exception handling using try, multiple catch blocks,
- * and a finally block in Java.
+ * Demonstrates exception handling using :
+     - try and multiple catch blocks,
+     - finally block in Java.
  */
 
 import java.util.InputMismatchException;
