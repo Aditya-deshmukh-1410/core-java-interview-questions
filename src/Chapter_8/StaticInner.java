@@ -1,5 +1,14 @@
 package Chapter_8;
 
+/*
+ * Description:
+ * This program demonstrates a static inner class in Java.
+ * A static inner class can access only the static members
+ * of the outer class.
+ * The static inner class can have both static and non-static methods
+ * and does not require an object of the outer class to be instantiated.
+ */
+
 import Chapter_8.Outer2.Inner2;
 
 class Outer2{
@@ -27,3 +36,8 @@ public class StaticInner {
 		
 	}
 }
+
+ /* Output:
+ * Inside inner meth: 20
+ * Inside inner meth2: 20
+ */
