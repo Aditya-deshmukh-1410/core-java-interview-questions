@@ -1,5 +1,15 @@
 package Chapter_8;
 
+/*
+ * Description:
+ * This program demonstrates the use of anonymous inner classes in Java.
+ * Anonymous inner classes are used to provide implementations of interfaces
+ * at the time of object creation without defining separate classes.
+ * Here, Salary, Bonus, and Tax interfaces are implemented anonymously
+ * to calculate the final salary.
+ */
+
+
 public class AnonymousInner {
 
 	public double calFinal(Salary salary , Bonus bonus , Tax tax ) {
@@ -33,3 +43,7 @@ public class AnonymousInner {
 			);
 	}
 }
+
+ /* Output:
+ * 27000.0
+ */
