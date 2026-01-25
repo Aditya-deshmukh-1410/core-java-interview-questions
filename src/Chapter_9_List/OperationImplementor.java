@@ -53,7 +53,6 @@ public class OperationImplementor implements Operation{
 				break;
 			}
 		}
-		
 	}
 
 	@Override
