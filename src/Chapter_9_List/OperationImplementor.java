@@ -62,7 +62,5 @@ public class OperationImplementor implements Operation{
 			Emp emp = (Emp) iterator.next();
 			System.out.println(emp);
 		}
-		
 	}
-
 }
