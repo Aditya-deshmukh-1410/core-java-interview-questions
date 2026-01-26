@@ -1,5 +1,32 @@
 package Chapter_9c_comparator;
 
+/*
+ * =============================================================
+ * TOPIC: Comparator Interface – Custom Sorting of Objects
+ *
+ * CLASS ROLE:
+ * Emp is a POJO class. Sorting logic is NOT inside this class.
+ * Instead, external Comparator classes define different
+ * sorting strategies.
+ 
+ * WHAT IS Comparator?
+ * - Used for CUSTOM SORTING
+ * - Found in java.util package
+ * - Contains method: compare(Object o1, Object o2)
+ * - Allows multiple sorting logics without modifying POJO
+ 
+ * SORTING STRATEGIES USED IN THIS PROGRAM:
+ * 1️⃣ SortByName   → Sort employees alphabetically by name
+ * 2️⃣ SortBySalary → Sort employees based on salary
+
+ * CORE JAVA CONCEPTS USED:
+ * ✔ POJO (Encapsulation)
+ * ✔ Comparator Interface
+ * ✔ Collections.sort(list, comparator)
+ * ✔ Multiple sorting logics for same class
+ */
+
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -67,7 +94,7 @@ public class Emp{
 		
 		System.out.println("---- Sort by Name ----");
 
-		Collections.sort(arr, new SortByName());
+		Collections.sort(arr, new SortByName());   //costom sorting using name
 
 		Iterator<Emp> iterator2 = arr.iterator();  
 		while (iterator2.hasNext()) {
@@ -77,7 +104,7 @@ public class Emp{
 
 		System.out.println("---- Sort by Salary ----");
 
-		Collections.sort(arr, new SortBySalary());
+		Collections.sort(arr, new SortBySalary());  //custom sorting using salary
 
 		Iterator<Emp> iterator3 = arr.iterator();   
 		while (iterator3.hasNext()) {
@@ -88,3 +115,22 @@ public class Emp{
 		
 	}
 }
+
+/*
+  Output:
+ * ---- Before Sorting data ----
+ * Emp [id=102, name=sham, salary=6000.0]
+ * Emp [id=101, name=naman, salary=5000.0]
+ * Emp [id=103, name=raju, salary=7000.0]
+ 
+   ---- Sort by Name ----
+ * Emp [id=101, name=naman, salary=5000.0]
+ * Emp [id=103, name=raju, salary=7000.0]
+ * Emp [id=102, name=sham, salary=6000.0]
+ 
+   ---- Sort by Salary ----
+ * Emp [id=101, name=naman, salary=5000.0]
+ * Emp [id=102, name=sham, salary=6000.0]
+ * Emp [id=103, name=raju, salary=7000.0]
+ 
+ */
