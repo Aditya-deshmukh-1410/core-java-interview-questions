@@ -1,4 +1,11 @@
 package Chapter_9_List;
+/*
+ * CORE JAVA CONCEPTS USED:
+ * - Collections Framework (List, ArrayList)
+ * - Object storage in collections
+ * - Encapsulation (POJO class)
+ * - Method calling via another class (OperationImplementor)
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,16 +42,34 @@ public class Main {
 		
 		OperationImplementor op = new OperationImplementor();
 		
-		op.add(list);
+		op.add(list);  // Add all employees to internal list
 		op.show();
 		
-		op.update(3, "naman", 3300);
+		op.update(3, "naman", 3300);  // Update employee with id=3
 		op.show();
 		
-		op.delete(2);
+		op.delete(2);   // Remove employee with id=2
 		op.show();
 		
-		op.search(4);
+		op.search(4);   // Search employee with id=4
 		
 	}
 }
+
+
+ /*EXPECTED OUTPUT FLOW (example):
+ * --- Initial List ---
+  - 1 Ram 4000
+  - 2 sham 3000
+  - 3 raju 5000
+  - 4 rohan 5500
+ 
+ * --- After Update (id=3) ---
+  - 3 naman 3300
+ 
+ * --- After Delete (id=2 removed) ---
+  - List size decreases
+ 
+ * --- Search Result ---
+  - Employee with id=4 found
+*/
