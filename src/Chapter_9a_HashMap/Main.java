@@ -1,5 +1,20 @@
 package Chapter_9a_HashMap;
 
+/* CORE JAVA CONCEPTS USED:
+  - Collections Framework (HashMap)
+  - Key-Value data structure
+  - Hashing mechanism
+  - Object storage in collections
+  - Encapsulation via POJO
+  
+ CORE JAVA LEARNING:
+  ✔ HashMap stores data in key-value pairs
+  ✔ put() → insert or update value for a key
+  ✔ remove() → delete entry using key
+  ✔ get() → retrieve value using key
+  
+ */
+
 import java.util.HashMap;
 
 public class Main {
@@ -52,3 +67,26 @@ public class Main {
 	}
 
 }
+
+/*  OUTPUT :
+ data inserted....
+ * 1 - Emp [id=11, name=Harshu, salary=5000.0]
+ * 2 - Emp [id=12, name=Divesh, salary=6000.0]
+ * 3 - Emp [id=13, name=Sahil, salary=7000.0]
+ * 4 - Emp [id=14, name=Aditya, salary=8000.0]
+ *
+ * data updated....
+ * 1 - Emp [id=11, name=Harsh, salary=8080.0]
+ * 2 - Emp [id=12, name=Divesh, salary=6000.0]
+ * 3 - Emp [id=13, name=Sahil, salary=7000.0]
+ * 4 - Emp [id=14, name=Aditya, salary=8000.0]
+ *
+ * data deleted....
+ * 1 - Emp [id=11, name=Harsh, salary=8080.0]
+ * 2 - Emp [id=12, name=Divesh, salary=6000.0]
+ * 4 - Emp [id=14, name=Aditya, salary=8000.0]
+ *
+ * Searched data : Emp [id=14, name=Aditya, salary=8000.0]
+ *
+ */
+
