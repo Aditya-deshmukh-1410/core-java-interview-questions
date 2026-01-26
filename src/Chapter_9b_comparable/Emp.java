@@ -1,5 +1,21 @@
 package Chapter_9b_comparable;
 
+/*
+ * TOPIC: Comparable Interface – Natural Sorting of Objects
+ 
+# WHAT IS Comparable?
+  - Comparable is used for NATURAL SORTING of objects
+  - Found in java.lang package
+  - Contains method: compareTo(Object o)
+  
+ # CORE JAVA CONCEPTS USED:
+  ✔ POJO (Encapsulation via private fields + getters/setters)
+  ✔ Comparable Interface
+  ✔ Collections.sort()
+  ✔ Iterator for traversal
+  
+*/
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -85,14 +101,23 @@ public class Emp implements Comparable<Emp>{
 		while (iterator2.hasNext()) {
 			Emp emp4 = (Emp) iterator2.next();
 			System.out.println(emp4);
-		}
-		
-		
+		}	
 	}
-	
-	
-	
 }
+
+
+/*
+	 ---- Before sorting data ----
+ * Emp [id=102, name=sham, salary=6000.0]
+ * Emp [id=101, name=naman, salary=5000.0]
+ * Emp [id=103, name=raju, salary=7000.0]
+ 
+     ---- After sorting data ----
+ * Emp [id=101, name=naman, salary=5000.0]
+ * Emp [id=102, name=sham, salary=6000.0]
+ * Emp [id=103, name=raju, salary=7000.0]
+ 
+ */
 
 
 
