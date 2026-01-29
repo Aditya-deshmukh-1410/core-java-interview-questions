@@ -75,7 +75,7 @@ public class Main {
 		emp3.setName("raghu");
 		emp3.setSalary(7000);
 		
-		Emp emp4  = new Emp();
+		Emp emp4  = new Emp(); 
 		emp4.setId(4);
 		emp4.setName("naman");
 		emp4.setSalary(9000);
