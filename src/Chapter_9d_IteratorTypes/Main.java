@@ -9,7 +9,7 @@ package Chapter_9d_IteratorTypes;
  * 1️⃣ Iterator        → Universal cursor for all Collection classes
  * 2️⃣ ListIterator    → Special iterator for List (bidirectional)
  * 3️⃣ Enumeration     → Legacy cursor used with Vector/Hashtable
- * 4️⃣ For-Each Loop   → Simplified traversal (Java 5+)
+ * 4️⃣ For-Each Loop   → Simplified traversal 
  *
  * =============================================================
  * 🔽 ITERATOR
