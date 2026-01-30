@@ -5,7 +5,6 @@ class Calc{
 		
 		System.out.println("Thread "+Thread.currentThread().getName()+"| Priority "+Thread.currentThread().getPriority());
 		
-		
 		for(int i= 1;i<=5;i++) {
 			System.out.println(n*i);
 			try {
@@ -15,8 +14,6 @@ class Calc{
 			}
 		}
 	}
-	
-	
 }
 
 class Thread1 extends Thread{
