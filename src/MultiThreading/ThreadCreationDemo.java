@@ -5,7 +5,7 @@ public class ThreadCreationDemo extends Thread{
 	//1st method!
 	@Override
 	public void run() {
-		System.out.println("thread1 is running...");
+		System.out.println("thread1 is running...");    
 	}
 
 	public static void main(String[] args) {
