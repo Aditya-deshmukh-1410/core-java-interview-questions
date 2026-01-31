@@ -1,6 +1,28 @@
 package ThreadSynchronization;
 
+/* Description :
+ * This program demonstrates Thread Synchronization in Java using the
+ * synchronized keyword.
+ 
+ * A shared resource (Calc class) contains a synchronized method `count()`.
+ * Multiple threads access this method, but synchronization ensures that
+ * only one thread executes the method at a time.
+ 
+ * Two threads are created:
+ * 1) Thread1 prints multiples of 5
+ * 2) Thread2 prints multiples of 25
+ 
+ * The program also demonstrates:
+ * - Thread naming
+ * - Thread priority
+ * - Current thread information
+ *
+ */
+
+// Shared resource class
 class Calc{
+
+	// Synchronized Method
 	synchronized void count(int n) {
 		
 		System.out.println("Thread "+Thread.currentThread().getName()+"| Priority "+Thread.currentThread().getPriority());
@@ -49,7 +71,7 @@ class Thread2 extends Thread{
 public class Main{
 	public static void main(String[] args) {
 		
-	 Calc calc  = new Calc();
+	 Calc calc  = new Calc();  // Shared object
 	 
 	 Thread1 thread1  = new Thread1(calc);
 	 Thread2 thread2  = new Thread2(calc);
@@ -65,4 +87,23 @@ public class Main{
 	 thread2.start();
 	}
 }
+
+
+/*
+Output:
+
+Thread Multiple-of-5 | Priority 10
+5
+10
+15
+20
+25
+Thread Multiple-of-25 | Priority 1
+25
+50
+75
+100
+125
+
+*/
 
