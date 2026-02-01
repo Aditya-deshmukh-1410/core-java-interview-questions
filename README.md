@@ -7,10 +7,7 @@ The questions are solved as part of **regular practice** and **interview prepara
 
 ---
   
-## 📌 Topics Covered
- 
 
----
 
 
 
