@@ -8,7 +8,7 @@ package ThreadSynchronization;
  * Multiple threads access this method, but synchronization ensures that
  * only one thread executes the method at a time.
  
- * Two threads are created:
+ * Two threads are created: 
  * 1) Thread1 prints multiples of 5
  * 2) Thread2 prints multiples of 25
  
